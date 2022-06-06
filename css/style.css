@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
     padding: 0;
     margin: 0;
@@ -7,27 +8,38 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.continer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ddd;
 }
 
 .wrapper {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: #011627;
+    background: #fff;
     padding: 20px;
+    max-width: 450px;
+    border-radius: 10px;
+    margin: 10px;
+    backdrop-filter: blur(2px);
 }
 
 .mainContent {
-    color: rgb(237, 245, 252);
+    color: rgb(4, 25, 44);
     line-height: 30px;
 }
 
 .author {
-    color: #f2fff0;
-    font-style: italic;
+    color: #03021b;
+    font-style: underline;
+    max-width: 60%;
 }
 
 #accAuthor {
@@ -35,13 +47,19 @@
 }
 
 #author {
-    color: aliceblue;
+    color: #03021b;
+}
+
+.authtorHead {
+    color: #011d32;
+    font-weight: bold;
 }
 
 .contentHolder {
     padding: 10px;
     border-radius: 5px;
-    background: #01111f;
+    background: #e3f2ff;
+    min-width: 85%;
 }
 
 .author-container {
@@ -52,13 +70,14 @@
 
 .copy,
 .google {
-    color: #caffc3;
-    background-color: #01111f;
+    color: #d7ffff;
+    background-color: #090127;
     padding: 8px 12px;
     border-radius: 4px;
     margin: 10px;
     text-transform: capitalize;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .copy {
@@ -66,14 +85,15 @@
 }
 
 .bottom i {
-    color: #1efe01;
+    color: #ecf7ff;
+    margin-left: 10px;
 }
 
 .button,
 .google {
-    background: #1efe01;
+    background: #0e0127;
     padding: 8px 12px;
-    color: #011627;
+    color: #eff8ff;
     font-size: 18px;
     border-radius: 4px;
     font-weight: 600;
@@ -82,5 +102,17 @@
 }
 
 .google i {
-    color: #0d5ef3;
+    color: #e0ebff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: "Pacifico", cursive;
+    color: inherit;
 }
